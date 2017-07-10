@@ -20,7 +20,7 @@ function! s:session_handler(lines)
   if len(a:lines) == 0
     return
   elseif len(a:lines) == 2
-    execute fzf_session#create(a:lines[0])
+    execute fzf_session#load(a:lines[1])
     return
   endif
 
